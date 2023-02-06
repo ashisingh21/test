@@ -259,6 +259,9 @@ button {
         margin-left: 5.9rem;
     }
 
+    .insert-comment div input {
+        width: 80%;
+    }
 }
 
 @media only screen and (min-width: 700px) and (max-width: 992px) {
