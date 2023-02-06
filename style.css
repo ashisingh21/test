@@ -1,0 +1,241 @@
+/* Fonts */
+@font-face {
+    font-family: AgencyFB-Bold;
+    src: url(fonts/AgencyFBBold.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Italic;
+    src: url(fonts/Roboto-Italic.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(fonts/Roboto-Light.ttf);
+}
+
+/* Fonts */
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #1e1d32;
+    overflow-x: hidden;
+}
+
+.images {
+    margin: 2rem 32.3rem;
+
+    justify-content: space-between;
+    display: flex;
+}
+
+.image-box {
+
+    height: 22rem;
+    width: 21rem;
+}
+
+.image-box img {
+    width: 21rem;
+}
+
+
+.image-title h3 {
+    font-family: AgencyFB-Bold;
+    text-align: center;
+    color: #e8f2fa;
+    font-size: 1.7rem;
+}
+
+
+.images .image-box:nth-of-type(1) {
+    background-color: #3dd0d8;
+}
+
+.images .image-box:nth-of-type(2) {
+    background-color: #5c9ddd;
+}
+
+.images .image-box:nth-of-type(3) {
+    background-color: #7c69e3;
+}
+
+/* comments on the post section */
+section {
+    background-color: #292845;
+    margin: 4rem 32.5rem;
+    padding: 2.2rem 4rem;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+section h2 {
+    font-family: AgencyFB-Bold;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+}
+
+section>.comment:nth-of-type(2) {
+    margin-left: 7rem;
+}
+
+section>.comment:nth-of-type(3) {
+    margin-left: 14rem;
+}
+
+.comment {
+    position: relative;
+    margin-bottom: 2.5rem;
+
+}
+
+.comment img {
+    width: 5.4rem;
+    height: 5.4rem;
+    border-radius: 80px;
+
+}
+
+.comment-info div span:nth-of-type(2) {
+    font-family: Roboto-Bold;
+    font-size: 1rem;
+    color: #c2d4f8;
+}
+
+.comment p {
+    font-family: Roboto-Light;
+    margin: 0 0 0 7.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #c2d4f8;
+
+}
+
+.comment-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment-info div span:nth-of-type(1) {
+    font-family: AgencyFB-Bold;
+    font-size: 1.7rem;
+}
+
+.comment-info div {
+    display: flex;
+    flex-direction: column;
+    flex: 6;
+    margin-left: 2rem;
+
+}
+
+
+.comment>div>span:nth-of-type(1) {
+    font-family: Roboto-Bold;
+    font-size: .9rem;
+    color: #3ccbd3;
+}
+
+/* Leave a comment */
+
+.insert-comment {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+
+
+
+
+}
+
+.insert-comment div {
+    display: flex;
+    gap: 1.2rem;
+}
+
+
+
+.insert-comment input,
+.insert-comment textarea {
+
+    padding: 1.5rem 3rem 1.5rem 1.7rem;
+    background-color: #181728;
+    font-family: Roboto-Italic;
+    border: none;
+    flex: 4;
+    color: white;
+    font-size: .9rem;
+
+
+}
+
+.insert-comment input::placeholder,
+.insert-comment textarea::placeholder {
+    color: #c2d4f8;
+    font-family: Roboto-Italic;
+    font-size: .9rem;
+}
+
+
+
+button {
+    padding: 1.5rem 3.6rem;
+    border-radius: 10px;
+    font-family: Roboto-Bold;
+    font-size: 1rem;
+    background: linear-gradient(270deg, #9252ea 0%, #40d8dd 100%);
+    color: #ffffff;
+    width: fit-content;
+    margin: 1rem 0 2rem 0;
+
+}
+
+@media (max-width: 700px) {
+
+
+
+    .images {
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .image-box {
+        width: 80%;
+        height: auto;
+    }
+
+    .image-box img {
+        width: 100%;
+    }
+
+    section {
+        width: 80%;
+        margin-inline: auto;
+
+
+    }
+
+    .insert-comment div {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .comment img {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 80px;
+
+    }
+}
