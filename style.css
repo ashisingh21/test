@@ -39,12 +39,13 @@ body {
 
 .image-box {
 
-    height: 22rem;
-    width: 21rem;
+    height: auto;
+    max-width: 100%;
 }
 
 .image-box img {
-    width: 21rem;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -52,7 +53,7 @@ body {
     font-family: AgencyFB-Bold;
     text-align: center;
     color: #e8f2fa;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
 }
 
 
@@ -74,7 +75,7 @@ section {
 
     max-width: 44%;
     margin-inline: auto;
-    padding: 2.2rem 4rem;
+    padding: 1.5rem 3.5rem;
     color: #ffffff;
     border-radius: 10px;
 }
@@ -82,7 +83,7 @@ section {
 section h2 {
     font-family: AgencyFB-Bold;
     margin-bottom: 2rem;
-    font-size: 2.2rem;
+    font-size: 1.7rem;
 }
 
 section>.comment:nth-of-type(2) {
@@ -100,23 +101,24 @@ section>.comment:nth-of-type(3) {
 }
 
 .comment img {
-    width: 5.4rem;
-    height: 5.4rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 80px;
 
 }
 
 .comment-info div span:nth-of-type(2) {
     font-family: Roboto-Bold;
-    font-size: 1rem;
+    font-size: .7rem;
     color: #c2d4f8;
+
 }
 
 .comment p {
     font-family: Roboto-Light;
-    margin: 0 0 0 7.5rem;
-    font-size: 1.1rem;
-    line-height: 1.6;
+    margin: .5rem 0 0 6rem;
+    font-size: .8rem;
+    line-height: 1.2;
     color: #c2d4f8;
 
 }
@@ -129,7 +131,7 @@ section>.comment:nth-of-type(3) {
 
 .comment-info div span:nth-of-type(1) {
     font-family: AgencyFB-Bold;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
 
 .comment-info div {
@@ -143,7 +145,7 @@ section>.comment:nth-of-type(3) {
 
 .comment>div>span:nth-of-type(1) {
     font-family: Roboto-Bold;
-    font-size: .9rem;
+    font-size: .7rem;
     color: #3ccbd3;
 }
 
@@ -170,11 +172,11 @@ section>.comment:nth-of-type(3) {
 .insert-comment input,
 .insert-comment textarea {
 
-    padding: 1.5rem 3rem 1.5rem 1.7rem;
+    padding: 1.2rem 3.5rem 1.2rem 1.2rem;
     background-color: #181728;
     font-family: Roboto-Italic;
     border: none;
-    flex: 4;
+
     color: white;
     font-size: .9rem;
 
@@ -185,16 +187,17 @@ section>.comment:nth-of-type(3) {
 .insert-comment textarea::placeholder {
     color: #c2d4f8;
     font-family: Roboto-Italic;
-    font-size: .9rem;
+    font-size: .7rem;
 }
 
 
 
 button {
-    padding: 1.5rem 3.6rem;
+    padding: 1.2rem 2.6rem;
     border-radius: 10px;
     font-family: Roboto-Bold;
-    font-size: 1rem;
+    border: none;
+    font-size: .8rem;
     background: linear-gradient(270deg, #9252ea 0%, #40d8dd 100%);
     color: #ffffff;
     width: fit-content;
@@ -202,9 +205,11 @@ button {
 
 }
 
+/* Media Queries */
+
 @media (max-width: 700px) {
     html {
-        font-size: 60%;
+        font-size: 65%;
     }
 
     .images {
@@ -260,7 +265,7 @@ button {
     }
 
     .insert-comment div input {
-        width: 80%;
+        overflow-x: hidden;
     }
 }
 
@@ -268,7 +273,7 @@ button {
 
 
     html {
-        font-size: 90%;
+        font-size: 75%;
     }
 
     .images {
@@ -322,6 +327,9 @@ button {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    html {
+        font-size: 85%;
+    }
 
     .images {
 
